@@ -16,7 +16,7 @@
             "stock": 1
         },
         {
-            "name": "meat / pound",
+            "name": "meat/pound",
             "unit_price": 500,
             "stock": 8
         }

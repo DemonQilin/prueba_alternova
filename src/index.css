@@ -1,0 +1,59 @@
+:root{
+    --color-primary: #e71e6e;
+    --color-title: #333;
+    --color-font: #1d1d1b;
+    --color-bg: #fff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-font)
+}
+
+body {
+    margin: 0;
+
+    background-color: rgb(219, 210, 210);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Animations */
+.ver-msg.ver-msg {
+    transform: translate(-50%,0);
+}
+
+.ver-cart.ver-cart {
+    transform: translateX(0);
+}
+
+.add-product.add-product {
+    transform: translateY(-5px);
+}
+
+.sacudir {
+    animation: sacudir 300ms ease 1;
+}
+
+@keyframes sacudir {
+    30% {
+        transform: translateX(30%);
+    }
+
+    65% {
+        transform: translateX(-30%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
