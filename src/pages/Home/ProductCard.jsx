@@ -199,7 +199,7 @@ const ProductCard = ({ product, setMsg}) => {
         <Article>
             <header>
                 <ContainerImg>
-                    <img src="https://picsum.photos/400/400?random" alt={product.name} />
+                    <img src="https://placeimg.com/400/400/any" alt={product.name} />
                 </ContainerImg>
                 <TitleArticle name={name}>
                     <h2>{name}</h2>
