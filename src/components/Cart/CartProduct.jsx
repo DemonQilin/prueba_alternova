@@ -91,7 +91,12 @@ const CartProduct = ({ product }) => {
           <QuantyArticle>{product.quanty}</QuantyArticle>
           <PriceArticle>$ {product.price}</PriceArticle>
           <TotalArticle>$ {product.price * product.quanty}</TotalArticle>
-          <BtnDropArticle title='Drop product' onClick={dropProduct}><i className="fa-solid fa-xmark"></i></BtnDropArticle>
+          <BtnDropArticle
+              title='Drop product'
+              onClick={dropProduct}
+          >
+              <i className="fa-solid fa-xmark"></i>
+          </BtnDropArticle>
       </CartProductArticle>
   )
 }

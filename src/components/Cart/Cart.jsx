@@ -227,11 +227,19 @@ const Cart = ({ visibleCart, setVisibleCart, setMsg }) => {
             <CartSection id='cart-container'>
                 <CartContainer>
                     <CartHeader>
-                        <BtnComeBack title='Regresar' onClick={closeCart}>
+                        <BtnComeBack
+                            title='Regresar'
+                            onClick={closeCart}
+                        >
                             <i className="fa-solid fa-arrow-right"></i>
                         </BtnComeBack>
                         <h2>Cart ({totalProducts})</h2>
-                        <BtnDropCart title='Vaciar Carrito' onClick={dropCart}><i className="fa-regular fa-trash-can"></i></BtnDropCart>
+                        <BtnDropCart
+                            title='Vaciar Carrito'
+                            onClick={dropCart}
+                        >
+                            <i className="fa-regular fa-trash-can"></i>
+                        </BtnDropCart>
                     </CartHeader>
                     <ProductsCartContainer>
                         {!totalProducts &&
@@ -247,7 +255,12 @@ const Cart = ({ visibleCart, setVisibleCart, setMsg }) => {
                     </ProductsCartContainer>
                     <ActionsCart>
                         <TotalOrder>Total: <span>$ {total}</span></TotalOrder>
-                        <BtnCreateOrder ref={$btnCreateOrder} onClick={createOrder}>Create Order</BtnCreateOrder>
+                        <BtnCreateOrder
+                            ref={$btnCreateOrder}
+                            onClick={createOrder}
+                        >
+                            Create Order
+                        </BtnCreateOrder>
                     </ActionsCart>
                 </CartContainer>
             </CartSection>

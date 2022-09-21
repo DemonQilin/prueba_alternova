@@ -151,6 +151,7 @@ const ProductCard = ({ product, setMsg}) => {
             }, 1600);
             return
         };
+        
         setQuanty(quanty + 1);
     };
 
